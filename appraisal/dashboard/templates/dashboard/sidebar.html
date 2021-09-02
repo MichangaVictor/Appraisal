@@ -3,7 +3,7 @@
 		<div class="sidebar-wrapper" data-simplebar="true">
 			<div class="sidebar-header">
 				<div>
-					<img src="{% static 'dashboard/assets/images/favicon.ico' %}" class="logo-icon" alt="logo icon">
+					<img src="{% static 'dashboard/assets/images/migori.png' %}" class="logo-icon" alt="logo icon">
 				</div>
 				<div>
 					<h4 class="logo-text">Migori County</h4>
@@ -34,11 +34,17 @@
 				<li>
 					<a href="javascript:;" class="has-arrow">
 						<div class="parent-icon"><i class="bx bx-category"></i></div>
-						<div class="menu-title">Admin</div>
+						<div class="menu-title">Configuration</div>
 					</a>
 					<ul>
-						<li><a class="dropdown-item" href="javascript:;"><i class="bx bx-caret-right"></i>Employees</a></li>
-						<li><a class="dropdown-item" href="javascript:;"><i class="bx bx-cog"></i><span>Settings System</span></a>
+						<li><a href="{% url 'ministry' %}"><i class="bx bx-caret-right"></i>Ministries</a></li>
+						<li><a href="{% url 'designation' %}"><i class="bx bx-caret-right"></i>Designation</a></li>
+						<li><a href="{% url 'duty-station' %}"><i class="bx bx-caret-right"></i>Duty Station</a></li>
+						<li><a href="{% url 'section' %}"><i class="bx bx-caret-right"></i><span>Sections</span></a>
+						<li><a href="{% url 'employment_type' %}"><i class="bx bx-caret-right"></i><span>Employment Type </span></a>
+						<li><a href="{% url 'job_group' %}"><i class="bx bx-caret-right"></i><span>Job Group</span></a>
+						<li><a href="{% url 'directorate' %}"><i class="bx bx-caret-right"></i><span>Directorate</span></a>
+						<li><a href="{% url 'employee' %}"><i class="bx bx-caret-right"></i>Employees</a></li>
 					</ul>
 				</li>
 				<li>
